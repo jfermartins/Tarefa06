@@ -125,7 +125,7 @@
                     <%= currentYear%>
                 </h2>
             </header> 
-                
+
             <div>
                 <table border="1" style="border-collapse: collapse;">
                     <tr>
@@ -160,7 +160,7 @@
                     <%}%>
 
                 </table>
-                    <%}%> 
+                <%}%> 
             </div>
         </div>
     </body>
