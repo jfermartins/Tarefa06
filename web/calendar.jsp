@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%--Capturando as exceções--%>
 <%
     int year = 0, month = 0, date = 1, weekDay = 0, day = 1, totDays = 30, i = 0, currentYear = 0, currentMonth = 0;
     String errorMessage = null;
@@ -60,6 +61,7 @@
         <h1>Calendário</h1>
         <div id="calendar">
             <header>
+                <%-- Tratando as exceções --%>
                 <%if (errorMessage != null) {%>
 
                 <div style="color:red"><%= errorMessage%></div>
@@ -118,16 +120,12 @@
                                 totDays = 31;
                                 break;
                             default:
-                                out.println("Digite um mês válido!");
-                                totDays = 0;
                                 break;
                         }%>
                     <%= currentYear%>
                 </h2>
-
-
-
-            </header>    
+            </header> 
+                
             <div>
                 <table border="1" style="border-collapse: collapse;">
                     <tr>
@@ -159,9 +157,10 @@
                         <%}%>
                         <%}%>
                     </tr>
-                    <%}%><%}%> 
+                    <%}%>
 
                 </table>
+                    <%}%> 
             </div>
         </div>
     </body>

@@ -10,12 +10,27 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body style="color: gray; text-align:center">
+    <body style="color: gray; text-align:justify">
         <h1>Calendário - JSP</h1>
         <h3>Digite o ano e o mês desejado:</h3>
         <form action="calendar.jsp">
             <p>Ano: <input type="number" name="year" placeholder="Ex: 2021"></p>
-            <p>Mês: <input type="number" name="month" placeholder="Ex: 3"></p>
+            <p>Mês: 
+                <select name="month">
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select> 
+            </p>
             <input type="submit" value="Gerar Calendario">
         </form>
     </body>
