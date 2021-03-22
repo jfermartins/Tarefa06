@@ -43,13 +43,6 @@
                 align-items: center;
             }
 
-            header {
-                width: 402px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
             button {
                 padding: 5px;
                 margin-bottom: 15px;
@@ -154,6 +147,8 @@
                         <% for (int j = 0; j < 7; j++) {%>  
                         <% if (day <= totDays) {%>
                         <td><%= day++%></td>
+                        <%} else {%>
+                        <td></td>
                         <%}%>
                         <%}%>
                     </tr>
